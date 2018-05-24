@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="theme-color" content="#f0a614">-->
+    <meta name="theme-color" content="#2f3790">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon/favicon.ico">
     <title><%- title %></title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="page-<%=pageName %>">
 <% include ../components/header %>
-<main>
+<main class="container">
     <%- body %>
 </main>
 <% include ../components/footer %>

@@ -1,0 +1,63 @@
+<header>
+    <nav class="navbar navbar-expand navbar-light bg-white">
+        <div class="container">
+            <div class="navbar__top-bar">
+                <a class="navbar-brand" href=":Front:Trade:">
+                    <img src="/img/coingi_logo-blue.svg" class="d-inline-block align-top" alt="coingi logo">
+                </a>
+                <div class="top-bar-buttons">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"></i> Jerry
+                            <span class="d-none d-sm-inline-block">Smith</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item {ifCurrent :Auth:Profile:}active{/ifCurrent}" href=":Auth:Profile:">
+                                Profile
+                            </a>
+                            <a class="dropdown-item {ifCurrent :Auth:Balance:}active{/ifCurrent}" href=":Auth:Balance:">
+                                Account Balance
+                            </a>
+                            <a class="dropdown-item {ifCurrent :Auth:Orders:}active{/ifCurrent}" href=":Auth:Orders:">
+                                Orders
+                            </a>
+                            <a class="dropdown-item {ifCurrent :Auth:Transactions:}active{/ifCurrent}" href=":Auth:Transactions:">
+                                Transactions
+                            </a>
+                            <a class="dropdown-item {ifCurrent :Auth:Security:}active{/ifCurrent}" href=":Auth:Security:">
+                                Security
+                            </a>
+                            <a class="dropdown-item {ifCurrent :Auth:ApiKeys:}active{/ifCurrent}" href=":Auth:ApiKeys:">
+                                API keys
+                            </a>
+                            <a class="dropdown-item {ifCurrent :Auth:Affiliate:}active{/ifCurrent}" href=":Auth:Affiliate:">
+                                Affiliate
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="logout!">
+                                Sign out
+                            </a>
+                        </div>
+                    </div>
+                    <% include locale-selector %>
+                </div>
+            </div>
+            <div class="navbar__menu">
+                <ul class="navbar-nav nav-pills float-left float-sm-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Trades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

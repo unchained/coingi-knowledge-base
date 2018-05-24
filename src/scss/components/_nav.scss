@@ -1,0 +1,62 @@
+.nav-auth {
+  > li + li {
+    margin-top: 0;
+  }
+
+  > li {
+    &:first-child {
+      > a {
+        border-radius: $nav-pills-border-radius $nav-pills-border-radius 0 0;
+        border-top-style: solid;
+      }
+    }
+
+    &:last-child {
+      > a {
+        border-radius: 0 0 $nav-pills-border-radius $nav-pills-border-radius;
+      }
+    }
+  }
+
+  li {
+    a {
+      background-color: $white;
+      border: 1px solid $coingi-gray;
+      border-radius: 0;
+      border-top-style: none;
+
+      i {
+        color: $nav-link-icon-color;
+        margin-right: 6px;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $primary;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    ul {
+      a {
+        color: $black;
+        font-weight: $wnormal;
+        font-size: 90%;
+        padding: 5px 10px 5px 30px;
+      }
+
+      li.active a {
+        background-color: lighten($primary, 5%);
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+}

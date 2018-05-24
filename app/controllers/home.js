@@ -7,7 +7,7 @@ module.exports = (app) => {
 
 router.get('/', (req, res, next) => {
   res.render('index', {
-    title: 'Generator-Express MVC',
+    title: 'Coingi.com\'s knowledge base',
     pageName: 'landing'
   });
 });
