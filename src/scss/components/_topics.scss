@@ -1,0 +1,13 @@
+.topics {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  //justify-content: space-between;
+
+  .card {
+    $margin: 20;
+
+    flex-basis: calc(33% - (#{$margin * 2}px));
+    margin: 0 #{$margin}px #{$margin * 2}px #{$margin}px;
+  }
+}

@@ -1,0 +1,47 @@
+.search {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  &__container {
+    max-width: 620px;
+    width: 100%;
+  }
+
+  .input-group {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+  &__input {
+    border-left: none;
+    height: 60px;
+
+    &,
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &__addon {
+    background: inherit;
+    border: none;
+    padding: 6px 8px 6px 20px;
+
+    .fa-search {
+      font-size: 24px;
+    }
+  }
+
+  &__popular {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  &__link {
+    padding: 0 10px;
+    text-decoration: underline;
+  }
+}
