@@ -1,4 +1,5 @@
 .search {
+  background: $gray-200;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -9,12 +10,11 @@
   }
 
   .input-group {
-    border: 1px solid #ced4da;
     border-radius: 0.25rem;
   }
 
   &__input {
-    border-left: none;
+    border: none;
     height: 60px;
 
     &,
@@ -25,7 +25,7 @@
   }
 
   &__addon {
-    background: inherit;
+    background: $white;
     border: none;
     padding: 6px 8px 6px 20px;
 

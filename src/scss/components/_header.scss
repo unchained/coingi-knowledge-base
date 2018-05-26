@@ -1,39 +1,4 @@
 .header {
   padding-top: 15px;
   background-color: $white;
-
-  .header-logo-caption {
-    padding-top: 15px;
-  }
-
-  .header-caption {
-    color: $gray;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-left-color: $table-border-color;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    @media (min-width: $screen-lg-min) {
-      font-size: 18px;
-      margin-top: 20px;
-      padding-left: 30px;
-    }
-
-    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-      font-size: 15px;
-      margin-top: 29px;
-      padding-left: 30px;
-    }
-
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-      font-size: 13px;
-      margin-top: 21px;
-      padding-left: 30px;
-    }
-
-    @media (max-width: $screen-xs-max) {
-      display: none;
-    }
-  }
 }
