@@ -4,13 +4,17 @@ ul.list {
     flex-flow: row wrap;
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
 
     li {
-      $dot-spacing-left: 20px;
+      $gutter-width: $grid-gutter-width/2;
+      $dot-spacing-left: 2rem;
 
+      display: inline-block;
       margin-bottom: 1rem;
-      padding-left: 15px + $dot-spacing-left;
-      padding-right: 15px;
+      padding-left: $dot-spacing-left;
+      border-left: $gutter-width solid transparent;
+      border-right: $gutter-width solid transparent;
       position: relative;
       width: 100%;
 
@@ -21,7 +25,7 @@ ul.list {
         position: absolute;
         font-size: 1.6em;
         line-height: 1;
-        left: 15px;
+        left: 0;
       }
     }
   }
@@ -33,6 +37,16 @@ ul.list {
       @include media-breakpoint-down(md) {
         width: 50%;
       }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+  }
+
+  &--two-columns {
+    li {
+      width: 50%;
 
       @include media-breakpoint-down(sm) {
         width: 100%;
