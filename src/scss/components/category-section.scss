@@ -1,0 +1,8 @@
+.category-section {
+  &__icon {
+    color: $primary;
+    font-size: 1.3rem;
+    margin-right: 0.75rem;
+    transform: rotate(-15deg) translateY(-15%);
+  }
+}

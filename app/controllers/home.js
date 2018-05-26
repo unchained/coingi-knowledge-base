@@ -14,7 +14,8 @@ router.get('/', (req, res, next) => {
 
 router.get('/category', (req, res, next) => {
   res.render('category', {
-    title: 'Category',
+    // TODO: Dynamic title by category id (url param)
+    title: 'Trading',
     pageName: 'category'
   });
 });

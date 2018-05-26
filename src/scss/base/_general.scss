@@ -5,3 +5,28 @@
 /**
 *   General page styles
 **/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+}
+
+main {
+  flex-grow: 2;
+}
+
+.nav-compact {
+  margin-left: 2rem;
+
+  .nav-item {
+    list-style-type: disc;
+  }
+
+  .nav-link {
+    padding: 0.3rem 1rem;
+  }
+}
