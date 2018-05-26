@@ -11,3 +11,10 @@ router.get('/', (req, res, next) => {
     pageName: 'landing'
   });
 });
+
+router.get('/article', (req, res, next) => {
+  res.render('article', {
+    title: 'Article title | Coingi.com\'s knowledge base',
+    pageName: 'article'
+  });
+});
