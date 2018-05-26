@@ -7,14 +7,14 @@ ul.list {
 
     li {
       $dot-spacing-left: 20px;
-      
+
       margin-bottom: 1rem;
       padding-left: 15px + $dot-spacing-left;
       padding-right: 15px;
       position: relative;
       width: 100%;
 
-      &:before {
+      &::before {
         display: block;
         content: '•';
         position: absolute;
@@ -30,6 +30,7 @@ ul.list {
       @include media-breakpoint-down(md) {
         width: 50%;
       }
+
       @include media-breakpoint-down(sm) {
         width: 100%;
       }
