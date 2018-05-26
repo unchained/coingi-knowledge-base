@@ -1,0 +1,32 @@
+.topics {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  //justify-content: space-between;
+
+  .card {
+    $margin: 20;
+
+    flex-basis: calc(33% - (#{$margin * 2}px));
+    margin: 0 #{$margin}px #{$margin * 2}px #{$margin}px;
+    text-decoration: none;
+    transition: all 180ms ease;
+
+    &:hover{
+      border-color: $link-hover-color;
+    }
+
+    .card-body {
+      min-height: 200px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      i {
+        font-size: 3em;
+      }
+    }
+  }
+}
