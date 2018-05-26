@@ -18,3 +18,11 @@ router.get('/article', (req, res, next) => {
     pageName: 'article'
   });
 });
+
+router.get('/category', (req, res, next) => {
+  res.render('category', {
+    // TODO: Dynamic title by category id (url param)
+    title: 'Trading',
+    pageName: 'category'
+  });
+});

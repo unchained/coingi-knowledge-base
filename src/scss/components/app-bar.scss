@@ -1,0 +1,23 @@
+.app-bar {
+  &__toggle {
+    border-radius: 0;
+    height: 56px;
+    text-align-last: left;
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &__nav {
+    background: $white;
+
+    .nav-item {
+      border-bottom: 1px solid $gray-200;
+    }
+
+    .nav-link {
+      padding: 0.75rem 12px;
+    }
+  }
+}

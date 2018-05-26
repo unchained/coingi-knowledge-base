@@ -1,13 +1,12 @@
 /**
 *   Global classes
 **/
-
 .video-container {
   position:relative;
-  padding-bottom:56.25%;
-  padding-top:30px;
-  height:0;
-  overflow:hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
   margin-bottom: 1rem;
 }
 
@@ -22,6 +21,32 @@
 /**
 *   General page styles
 **/
-html{
+html {
   font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+}
+
+main {
+  flex-grow: 2;
+}
+
+.nav-compact {
+  margin-left: 2rem;
+
+  .nav-item {
+    list-style-type: disc;
+  }
+
+  .nav-link {
+    padding: 0.3rem 1rem;
+  }
 }
