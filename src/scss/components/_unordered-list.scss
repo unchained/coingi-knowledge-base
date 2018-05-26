@@ -1,0 +1,22 @@
+ul.unordered-list {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding: 0;
+
+  li {
+    $dot-spacing-left: 20px;
+    margin-bottom: 1rem;
+    padding-left: 15px + $dot-spacing-left;
+    padding-right: 15px;
+    position: relative;
+    width: 100%;
+
+    &:before {
+      display: block;
+      content: '•';
+      position: absolute;
+      left: 15px;
+    }
+  }
+}
