@@ -11,3 +11,10 @@ router.get('/', (req, res, next) => {
     pageName: 'landing'
   });
 });
+
+router.get('/category', (req, res, next) => {
+  res.render('category', {
+    title: 'Category',
+    pageName: 'category'
+  });
+});
