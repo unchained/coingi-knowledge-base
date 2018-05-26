@@ -12,19 +12,4 @@
       margin-bottom: map-get($spacers, 3);
     }
   }
-
-  .similar_topics {
-    ul {
-      li {
-        width: 33.3333333%;
-
-        @include media-breakpoint-down(md) {
-          width: 50%;
-        }
-        @include media-breakpoint-down(sm) {
-          width: 100%;
-        }
-      }
-    }
-  }
 }
