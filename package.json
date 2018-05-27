@@ -21,6 +21,7 @@
     "ejs": "^2.3.1",
     "express": "^4.13.3",
     "express-ejs-layouts": "^2.3.1",
+    "express-favicon": "^2.0.1",
     "glob": "^6.0.4",
     "jquery": "^3.3.1",
     "method-override": "^2.3.0",
