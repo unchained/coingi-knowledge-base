@@ -1,112 +1,30 @@
-<% include components/subheader %>
+<%- include('components/subheader', {selectedCategory, selectedCategoryId}) %>
 
 <div class="container pt-4 pb-5">
     <div class="row">
-        <section class="col-12 category-section">
-            <h2 class="category-section__title mb-4">
-                <i class="category-section__icon far fa-money-bill-alt"></i>
-                Let's talk money
-            </h2>
-            <ul class="list--unordered list--two-columns">
-                <li>
-                    <a href="#">What is <b>money</b></a>
-                </li>
-                <li>
-                    <a href="#"><b>History</b> of trading</a>
-                </li>
-                <li>
-                    <a href="#">Why am I not <b>rich</b> yet?</a>
-                </li>
-                <li>
-                    <a href="#">Banking on <b>Bitcoin</b></a>
-                </li>
-                <li>
-                    <a href="#">My dog ate my <b>hardware wallet</b></a>
-                </li>
-                <li>
-                    <a href="#">Leverage moving <b>average</b></a>
-                </li>
-                <li>
-                    <a href="#">Billion <b>dollar</b> pizza</a>
-                </li>
-                <li>
-                    <a href="#">Who's the real <b>Satoshi</b>?</a>
-                </li>
-            </ul>
-        </section>
-
+        <% let notFirst = false %>
+        <% for (let [sectionName, section] of Object.entries(selectedCategory.sections)) { %>
+        <% if(notFirst){ %>
         <div class="col-12">
             <hr class="my-5">
         </div>
-
+        <% } %>
         <section class="col-12 category-section">
             <h2 class="category-section__title mb-4">
-                <i class="category-section__icon far fa-chart-line"></i>
-                Trading strategies
+                <i class="category-section__icon far <%- section.icon %>"></i>
+                <%= sectionName %>
             </h2>
             <ul class="list--unordered list--two-columns">
+                <% for (let articleId of section.articles) { %>
                 <li>
-                    <a href="#">What is <b>money</b></a>
+                    <a href="/article/<%= articleId %>"><%- getArticleTitleById(articleId) %></a>
                 </li>
-                <li>
-                    <a href="#"><b>History</b> of trading</a>
-                </li>
-                <li>
-                    <a href="#">Why am I not <b>rich</b> yet?</a>
-                </li>
-                <li>
-                    <a href="#">Banking on <b>Bitcoin</b></a>
-                </li>
-                <li>
-                    <a href="#">My dog ate my <b>hardware wallet</b></a>
-                </li>
-                <li>
-                    <a href="#">Leverage moving <b>average</b></a>
-                </li>
-                <li>
-                    <a href="#">Billion <b>dollar</b> pizza</a>
-                </li>
-                <li>
-                    <a href="#">Who's the real <b>Satoshi</b>?</a>
-                </li>
+                <% } %>
             </ul>
         </section>
-
-        <div class="col-12">
-            <hr class="my-5">
-        </div>
-
-        <section class="col-12 category-section">
-            <h2 class="category-section__title mb-4">
-                <i class="category-section__icon far fa-lock-alt"></i>
-                Security is key
-            </h2>
-            <ul class="list--unordered list--two-columns">
-                <li>
-                    <a href="#">What is <b>money</b></a>
-                </li>
-                <li>
-                    <a href="#"><b>History</b> of trading</a>
-                </li>
-                <li>
-                    <a href="#">Why am I not <b>rich</b> yet?</a>
-                </li>
-                <li>
-                    <a href="#">Banking on <b>Bitcoin</b></a>
-                </li>
-                <li>
-                    <a href="#">My dog ate my <b>hardware wallet</b></a>
-                </li>
-                <li>
-                    <a href="#">Leverage moving <b>average</b></a>
-                </li>
-                <li>
-                    <a href="#">Billion <b>dollar</b> pizza</a>
-                </li>
-                <li>
-                    <a href="#">Who's the real <b>Satoshi</b>?</a>
-                </li>
-            </ul>
-        </section>
+        <% if(!notFirst){ %>
+        <% notFirst = true %>
+        <% } %>
+        <% } %>
     </div>
 </div>

@@ -39,6 +39,7 @@
     "debug": "^2.2.0",
     "dedent-js": "^1.0.1",
     "del": "^3.0.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "gulp": "github:gulpjs/gulp#4.0",
