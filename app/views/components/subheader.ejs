@@ -5,24 +5,12 @@
     </button>
     <div class="collapse" id="collapseMobileNav">
         <ul class="nav app-bar__nav flex-column">
+            <% for (let [categoryId, category] of Object.entries(categories)) { %>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-user mr-3"></i>My account</a>
+                <a class="nav-link <%= (selectedCategoryId === categoryId) ? 'active' : '' %>" href="/category/<%- categoryId %>"><i class="far <%= category.icon %> mr-3"></i><%= category.name %>
+                </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-exchange-alt mr-3"></i>Coin transfer</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-money-bill-alt mr-3"></i>Deposits and withdrawals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#"><i class="far fa-chart-area mr-3"></i>Trading</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-bell mr-3"></i>Notifications</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-question-circle mr-3"></i>General</a>
-            </li>
+            <% } %>
         </ul>
     </div>
 </div>
@@ -30,26 +18,16 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1><%- title %></h1>
+                <h1><%= selectedCategory.name %></h1>
                 <div class="subheader__title pb-5">
-                    Learn what it means to be a trader
+                    <%= selectedCategory.description %>
                 </div>
                 <ul class="nav nav-tabs d-none d-md-flex">
+                    <% for (let [categoryId, category] of Object.entries(categories)) { %>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My account</a>
+                        <a class="nav-link <%= (selectedCategoryId === categoryId) ? 'active' : '' %>" href="<%= categoryId %>"><%= category.name %></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Coin transfer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Deposits and withdrawals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Trading</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Notifications</a>
-                    </li>
+                    <% } %>
                 </ul>
             </div>
         </div>

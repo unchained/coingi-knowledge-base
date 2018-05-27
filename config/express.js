@@ -7,12 +7,15 @@ const compress = require('compression');
 const methodOverride = require('method-override');
 const expressLayouts = require('express-ejs-layouts');
 const favicon = require('express-favicon');
-
+const categories = require('../app/models/categories');
+const articles = require('../app/models/articles');
 
 
 module.exports = (app, config) => {
   app.locals.ENV = config.env;
   app.locals.ENV_DEVELOPMENT = config.env === 'development';
+  app.locals.categories = categories;
+  app.locals.getArticleTitleById = id => (articles[id] ? articles[id].title : '');
 
   app.set('views', `${config.root}/app/views`);
   app.set('view engine', config.viewEngine);

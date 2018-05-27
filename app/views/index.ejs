@@ -26,42 +26,17 @@
     <div class="row">
         <div class="col">
             <section class="topics pt-5 pb-2">
-                <a href="/category" class="card">
+                <% for (let [categoryId, category] of Object.entries(categories)) { %>
+                <a href="/category/<%- categoryId %>" class="card">
                     <div class="card-body">
-                        <i class="far fa-user mb-3"></i>
-                        <h2 class="card-title">My account</h2>
+                        <i class="far <%= category.icon %> mb-3"></i>
+                        <h2 class="card-title"><%= category.name %></h2>
+                        <% if (category.description){ %>
+                        <p><%= category.description %></p>
+                        <% } %>
                     </div>
                 </a>
-                <a href="/category" class="card">
-                    <div class="card-body">
-                        <i class="far fa-exchange-alt mb-3"></i>
-                        <h2 class="card-title">Coin transfer</h2>
-                    </div>
-                </a>
-                <a href="/category" class="card">
-                    <div class="card-body">
-                        <i class="far fa-money-bill-alt mb-3"></i>
-                        <h2 class="card-title">Deposits and withdrawals</h2>
-                    </div>
-                </a>
-                <a href="/category" class="card">
-                    <div class="card-body">
-                        <i class="far fa-chart-area mb-3"></i>
-                        <h2 class="card-title">Trading</h2>
-                    </div>
-                </a>
-                <a href="/category" class="card">
-                    <div class="card-body">
-                        <i class="far fa-bell mb-3"></i>
-                        <h2 class="card-title">Notifications</h2>
-                    </div>
-                </a>
-                <a href="/category" class="card">
-                    <div class="card-body">
-                        <i class="far fa-question-circle mb-3"></i>
-                        <h2 class="card-title">General</h2>
-                    </div>
-                </a>
+                <% } %>
             </section>
 
             <hr>
