@@ -1,13 +1,23 @@
+import $ from 'jquery';
+import ClipboardJS from 'clipboard';
+
 require('bootstrap/dist/js/bootstrap.bundle');
 
 class Client {
-// eslint-disable-next-line no-useless-constructor,no-empty-function
   constructor() {
     this.init();
   }
 
   init() {
     this.initBackButton();
+    $('[data-toggle="tooltip"]').tooltip();
+
+    const copyButton = document.getElementById('copyLink');
+
+    if (copyButton) {
+      copyButton.setAttribute('data-clipboard-text', window.location.href);
+      new ClipboardJS(copyButton);
+    }
   }
 
   initBackButton() {

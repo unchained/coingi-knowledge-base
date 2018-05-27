@@ -1,17 +1,39 @@
+<div class="subheader pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title-container">
+                    <div class="d-flex justify-content-between mb-5">
+                        <button type="button" class="goBack btn btn-outline-light btn-back">
+                            <i class="fal fa-long-arrow-left"></i>
+                            back to all articles
+                        </button>
+                        <button type="button" class="btn btn-light btn-copy-link" id="copyLink" data-toggle="tooltip" data-placement="bottom" title="Copy article link">
+                            <i class="fal fa-link"></i>
+                        </button>
+                    </div>
+                    <h1 class="text-white mt-2">
+                        <%- selectedArticle.title %>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="col">
-            <a href="#" class="goBack"><i class="far fa-long-arrow-left"></i> back to all articles</a>
-            <article class="article py-5">
-                <header>
-                    <h1>
-                        <%- selectedArticle.title %>
-                    </h1>
-                </header>
+            <section class="article py-5">
+                <!--<header>-->
+                    <!--<h1>-->
+                        <!--<%- selectedArticle.title %>-->
+                    <!--</h1>-->
+                <!--</header>-->
                 <main>
                     <%- selectedArticle.content %>
                 </main>
-            </article>
+            </section>
 
             <hr>
 
