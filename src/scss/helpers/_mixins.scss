@@ -1,6 +1,7 @@
 @mixin themify($property, $pseudo:false) {
   @each $theme, $color in $themes {
     $parent: &;
+
     @if $pseudo {
       &--#{$theme} {
         &:#{$pseudo} {
@@ -19,4 +20,15 @@
 
 @function columns($n) {
   @return (100% / 12) * $n;
+}
+
+@mixin link-hover($color) {
+  color: $color;
+  opacity: 0.8;
+  transition: opacity 90ms ease;
+
+  &:hover {
+    color: $color;
+    opacity: 1;
+  }
 }

@@ -2,12 +2,11 @@
 *   Global classes
 **/
 .video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
   height: 0;
   overflow: hidden;
-  margin-bottom: 1rem;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
 }
 
 .video-container iframe,
@@ -43,4 +42,12 @@ main {
 
 hr {
   margin: 0;
+}
+
+.primary-navigation {
+  .nav-item:first-of-type {
+    .nav-link {
+      padding-left: 0;
+    }
+  }
 }

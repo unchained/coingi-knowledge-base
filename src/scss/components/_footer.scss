@@ -38,16 +38,12 @@
   .footer-nav {
     li {
       a {
-        color: inherit;
         display: inline-block;
+        font-weight: $wbook;
         padding: 0 1rem 0.4rem 0;
         text-decoration: underline;
 
-        &:hover,
-        &:active {
-          color: $gray-200;
-          text-decoration: underline;
-        }
+        @include link-hover($white);
       }
 
       &:last-of-type {
