@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
 const expressLayouts = require('express-ejs-layouts');
+const favicon = require('express-favicon');
 
 
 
@@ -18,7 +19,7 @@ module.exports = (app, config) => {
   app.use(expressLayouts);
   app.set('layout', 'layouts/layout');
 
-  // app.use(favicon(config.root + '/public/img/favicon.ico'));
+  app.use(favicon(config.root + '/dist/img/favicon.ico'));
   app.use(logger('dev'));
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({
