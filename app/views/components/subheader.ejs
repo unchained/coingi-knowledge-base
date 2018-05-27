@@ -1,37 +1,9 @@
-<div class="app-bar d-md-none">
-    <button class="btn btn-primary btn-block app-bar__toggle d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseMobileNav" aria-expanded="false" aria-controls="collapseMobileNav">
-        <span class="mobile-nav__title">Categories</span>
-        <i class="fa fa-plus-circle mr-2"></i>
-    </button>
-    <div class="collapse" id="collapseMobileNav">
-        <ul class="nav app-bar__nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-user mr-3"></i>My account</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-exchange-alt mr-3"></i>Coin transfer</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-money-bill-alt mr-3"></i>Deposits and withdrawals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#"><i class="far fa-chart-area mr-3"></i>Trading</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-bell mr-3"></i>Notifications</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="far fa-question-circle mr-3"></i>General</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="subheader pt-5 mb-5">
+<div class="subheader pt-5">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1><%- title %></h1>
-                <div class="subheader__title pb-5">
+                <h1 class="text-white"><%- title %></h1>
+                <div class="subheader__title pb-4 pb-md-5">
                     Learn what it means to be a trader
                 </div>
                 <ul class="nav nav-tabs d-none d-md-flex">
@@ -53,5 +25,33 @@
                 </ul>
             </div>
         </div>
+    </div>
+</div>
+<div class="app-bar d-md-none mb-4">
+    <button class="btn btn-primary btn-block app-bar__toggle d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseMobileNav" aria-expanded="false" aria-controls="collapseMobileNav">
+        <span class="mobile-nav__title">Browse categories</span>
+        <i class="fa fa-plus-circle mr-2"></i>
+    </button>
+    <div class="collapse" id="collapseMobileNav">
+        <ul class="nav app-bar__nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fal fa-user mr-3"></i>My account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fal fa-exchange-alt mr-3"></i>Coin transfer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fal fa-money-bill-alt mr-3"></i>Deposits and withdrawals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fal fa-chart-area mr-3"></i>Trading</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fal fa-bell mr-3"></i>Notifications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fal fa-question-circle mr-3"></i>General</a>
+            </li>
+        </ul>
     </div>
 </div>

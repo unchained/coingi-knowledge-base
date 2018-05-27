@@ -1,16 +1,23 @@
 .subheader {
-  background: $gray-200;
+  background: $primary;
 
   .nav-tabs {
     border-bottom: none;
 
     .nav-link {
       border: none;
+      color: $white;
+
+      &.active {
+        color: $primary;
+      }
     }
   }
 
   &__title {
-    font-size: 1.5rem;
+    color: $white;
+    font-size: 1.3rem;
+    font-weight: $wbook;
 
     @include media-breakpoint-down(md) {
       font-size: 1rem;

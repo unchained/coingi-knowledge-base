@@ -1,4 +1,4 @@
-<header>
+<header class="header">
     <nav class="navbar navbar-expand navbar-light bg-white">
         <div class="container">
             <div class="navbar__top-bar">
@@ -8,33 +8,32 @@
                 <div class="top-bar-buttons">
                     <div class="btn-group">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user"></i> Jerry
-                            <span class="d-none d-sm-inline-block">Smith</span>
+                            Jerry <span class="d-none d-sm-inline-block">Smith</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item {ifCurrent :Auth:Profile:}active{/ifCurrent}" href=":Auth:Profile:">
+                            <a class="dropdown-item " href="#">
                                 Profile
                             </a>
-                            <a class="dropdown-item {ifCurrent :Auth:Balance:}active{/ifCurrent}" href=":Auth:Balance:">
+                            <a class="dropdown-item" href="#">
                                 Account Balance
                             </a>
-                            <a class="dropdown-item {ifCurrent :Auth:Orders:}active{/ifCurrent}" href=":Auth:Orders:">
+                            <a class="dropdown-item" href="#">
                                 Orders
                             </a>
-                            <a class="dropdown-item {ifCurrent :Auth:Transactions:}active{/ifCurrent}" href=":Auth:Transactions:">
+                            <a class="dropdown-item" href="#">
                                 Transactions
                             </a>
-                            <a class="dropdown-item {ifCurrent :Auth:Security:}active{/ifCurrent}" href=":Auth:Security:">
+                            <a class="dropdown-item" href="#">
                                 Security
                             </a>
-                            <a class="dropdown-item {ifCurrent :Auth:ApiKeys:}active{/ifCurrent}" href=":Auth:ApiKeys:">
+                            <a class="dropdown-item" href="#">
                                 API keys
                             </a>
-                            <a class="dropdown-item {ifCurrent :Auth:Affiliate:}active{/ifCurrent}" href=":Auth:Affiliate:">
+                            <a class="dropdown-item" href="#">
                                 Affiliate
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="logout!">
+                            <a class="dropdown-item" href="#">
                                 Sign out
                             </a>
                         </div>
@@ -43,7 +42,10 @@
                 </div>
             </div>
             <div class="navbar__menu">
-                <ul class="navbar-nav nav-pills float-left float-sm-right">
+                <span class="navbar-text d-none d-sm-inline-block">
+                    Trade market with Cryptocurrency
+                </span>
+                <ul class="primary-navigation navbar-nav nav-pills float-left float-sm-right">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Trades</a>
                     </li>
