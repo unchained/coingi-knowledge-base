@@ -85,4 +85,32 @@
       padding-bottom: 5px;
     }
   }
+
+  form {
+    position: relative;
+  }
+
+  &__results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 1px;
+    border-radius: $input-border-radius-lg;
+    z-index: 1;
+    background-color: $white;
+    color: $primary;
+    display: none;
+    overflow: hidden;
+
+    &.visible {
+      display: block;
+    }
+
+    .nav {
+      .nav-link:hover {
+        background: #f7f7f7;
+      }
+    }
+  }
 }

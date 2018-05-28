@@ -15,6 +15,7 @@ const demoContent = `<div class="video-container">
                         <li>click enable 2 factor authentification</li>
                         <li>Follow the steps on screen to complete the activation</li>
                     </ol>`;
+
 module.exports = {
   'what-is-money': {
     title: 'What is <b>money</b>',
