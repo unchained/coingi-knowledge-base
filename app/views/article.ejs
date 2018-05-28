@@ -26,9 +26,9 @@
         <div class="col">
             <section class="article py-5">
                 <!--<header>-->
-                    <!--<h1>-->
-                        <!--<%- selectedArticle.title %>-->
-                    <!--</h1>-->
+                <!--<h1>-->
+                <!--<%- selectedArticle.title %>-->
+                <!--</h1>-->
                 <!--</header>-->
                 <main>
                     <%- selectedArticle.content %>
@@ -40,18 +40,11 @@
             <section class="similar_topics py-5">
                 <h2>Articles that might also help you:</h2>
                 <ul class="list--unordered list--two-columns">
+                    <% for (const [articleId, article] of demoRelatedArticles) { %>
                     <li>
-                        <a href="#">I want to set up FaceID</a>
+                        <a href="/article/<%= articleId %>"><%- article.title %></a>
                     </li>
-                    <li>
-                        <a href="#">I want to transfer bitcoin to another wallet</a>
-                    </li>
-                    <li>
-                        <a href="#">I can't buy or sell bitcoin</a>
-                    </li>
-                    <li>
-                        <a href="#">I don't understand how currency exchanges work</a>
-                    </li>
+                    <% } %>
                 </ul>
             </section>
         </div>

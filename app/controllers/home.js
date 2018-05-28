@@ -24,6 +24,7 @@ router.get('/article/:id', (req, res, next) => {
     res.render('article', {
       title: `Article title | ${BASE_TITLE}`,
       pageName: 'article',
+      selectedArticleId: articleId,
       selectedArticle,
     });
   } else {
@@ -54,7 +55,6 @@ router.get('/search', (req, res, next) => {
     /*
      * remove content from all articles
      */
-    // TODO: this fucks up the article content object
     const articlesArray = Object.entries(articles).map(([articleId, article]) => {
       return [articleId, {
         title: article.title,

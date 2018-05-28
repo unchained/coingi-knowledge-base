@@ -16,6 +16,10 @@ module.exports = (app, config) => {
   app.locals.ENV_DEVELOPMENT = config.env === 'development';
   app.locals.categories = categories;
   app.locals.getArticleTitleById = id => (articles[id] ? articles[id].title : '');
+  app.locals.demoRelatedArticles = function () {
+    const articlesArray = Object.entries(articles);
+    return [articlesArray[2], articlesArray[1], articlesArray[4], articlesArray[5]];
+  }();
 
   app.set('views', `${config.root}/app/views`);
   app.set('view engine', config.viewEngine);
