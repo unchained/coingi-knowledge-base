@@ -46,3 +46,27 @@ router.get('/category/:id', (req, res, next) => {
     next();
   }
 });
+
+router.get('/search', (req, res, next) => {
+  const input = req.query.input ? req.query.input : '';
+  let result;
+  if (input !== '') {
+    /*
+     * remove content from all articles
+     */
+    // TODO: this fucks up the article content object
+    const articlesArray = Object.entries(articles).map(([articleId, article]) => {
+      return [articleId, {
+        title: article.title,
+      }];
+    });
+
+    /*
+     * filter all articles depending on if the title contains the input string
+     */
+    result = articlesArray.filter(([articleId, article]) => article.title.toLowerCase().includes(input.toLowerCase()));
+  } else {
+    result = [];
+  }
+  res.json(result);
+});
