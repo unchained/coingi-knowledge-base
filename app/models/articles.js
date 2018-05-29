@@ -2,19 +2,22 @@ const demoContent = `<div class="video-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/zjpzepeW4cQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <p>
-                        Kogi tofu lo-fi yr flexitarian master cleanse before they sold out intelligentsia prism meh pug palo santo biodiesel vaporware viral. Tbh helvetica quinoa gluten-free put a bird on it authentic 8-bit distillery snackwave 3 wolf moon taxidermy trust fund bespoke gentrify art party. You probably haven't heard of them VHS distillery fam brunch, actually venmo typewriter helvetica. Wolf forage normcore franzen, glossier cardigan dreamcatcher gentrify jianbing freegan. Shoreditch authentic try-hard, deep v enamel pin master cleanse blog taiyaki etsy drinking vinegar seitan keytar bicycle rights prism woke. Hell of wolf street art hot chicken austin subway tile cold-pressed.
+                        If you've placed an order to buy or sell a certain currency but don't see the right amount in
+                        your account's balance list, there's <strong>no need to worry</strong>.
                     </p>
                     <p>
-                        Before they sold out intelligentsia prism meh pug palo santo biodiesel vaporware heard of them VHS distillery fam brunch, actually venmo typewriter helvetica. Wolf forage normcore franzen, glossier cardigan dreamcatcher gentrify jianbing freegan. Shoreditch authentic try-hard, deep v enamel pin master cleanse blog taiyaki etsy drinking vinegar seitan keytar bicycle rights prism woke. Hell of wolf street art hot chicken austin subway tile cold-pressed.
+                        When you place an order on any currency exchange, the money is not instantly added or deducted
+                        from your balance. Instead, the order is added to the order book, waiting to be filled by other
+                        users. This means that if you wan't to buy some Bitcoin, there has to be someone else on the opposite
+                        side, wanting to sell his Bitcoin to you and vice versa. We highly recommend you watch the 5 minute
+                        <a href="#">Getting started</a> video, which will introduce you to the key basics of currency
+                        exchanges and trading on Coingi.com.
                     </p>
                     <p>
-                        Or follow the steps below to resolve your issue:
-                    </p>
-                    <ol>
-                        <li>Go to your account settings</li>
-                        <li>click enable 2 factor authentification</li>
-                        <li>Follow the steps on screen to complete the activation</li>
-                    </ol>`;
+                        If you still have your orders hanging in the orderbook, try cancelling the order and placing a new one
+                        closer to the opposite side of the orderbook, or just wait until the order gets filled by another
+                        user at the current price.
+                    </p>`;
 
 module.exports = {
   'what-is-money': {
@@ -49,7 +52,7 @@ module.exports = {
     title: 'Who\'s the real <b>Satoshi</b>?',
     content: demoContent,
   },
-  'i-have-bought/sold-a-currency-but-don\'t-see-the-right-amount-on-my-account\'s-balance': {
+  'i-have-bought-sold-a-currency-but-dont-see-the-right-amount-on-my-accounts-balance': {
     title: 'I have bought/sold a currency but don\'t see the right <b>amount</b> on my <b>account\'s balance</b>',
     content: demoContent,
   },

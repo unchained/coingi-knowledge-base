@@ -1,6 +1,6 @@
 const demoArticlesList = [
   'what-is-money',
-  'i-have-bought/sold-a-currency-but-don\'t-see-the-right-amount-on-my-account\'s-balance',
+  'i-have-bought-sold-a-currency-but-dont-see-the-right-amount-on-my-accounts-balance',
   'why-am-i-not-rich-yet',
   'my-dog-ate-my-hardware-wallet',
   'billion-dollar-pizza',
@@ -27,7 +27,7 @@ const demoSectionsList = {
 module.exports = {
   'my-account': {
     name: 'My account',
-    description: 'Editing your profile, Two factor authentication, verifying your account',
+    description: 'Editing your profile, Two-factor authentication, Verifying your account',
     icon: 'fa-user',
     sections: demoSectionsList,
   },
@@ -39,7 +39,7 @@ module.exports = {
   },
   'deposits-and-withdrawals': {
     name: 'Deposits and withdrawals',
-    description: 'Sending and withdrawing money from/to your Coingi account',
+    description: 'Sending and withdrawing money from/to your Coingi.com account',
     icon: 'fa-money-bill-alt',
     sections: demoSectionsList,
   },
@@ -51,7 +51,7 @@ module.exports = {
   },
   notifications: {
     name: 'Notifications',
-    description: 'Market signals, Managing notifications from Coingi',
+    description: 'Market signals, Managing notifications from Coingi.com',
     icon: 'fa-bell',
     sections: demoSectionsList,
   },
