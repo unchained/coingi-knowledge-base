@@ -8,10 +8,13 @@ const demoContent = `<div class="video-container">
                     <p>
                         When you place an order on any currency exchange, the money is not instantly added or deducted
                         from your balance. Instead, the order is added to the order book, waiting to be filled by other
-                        users. This means that if you wan't to buy some Bitcoin, there has to be someone else on the opposite
-                        side, wanting to sell his Bitcoin to you and vice versa. We highly recommend you watch the 5 minute
-                        <a href="#">Getting started</a> video, which will introduce you to the key basics of currency
-                        exchanges and trading on Coingi.com.
+                        users.
+                    </p>
+                    <p>
+                       This means that if you wan't to buy some Bitcoin, there has to be someone else on the opposite
+                       side, wanting to sell his Bitcoin to you and vice versa. We highly recommend you watch the 5 minute
+                       <a href="#">Getting started</a> video, which will introduce you to the key basics of currency
+                       exchanges and trading on Coingi.com.
                     </p>
                     <p>
                         If you still have your orders hanging in the orderbook, try cancelling the order and placing a new one
