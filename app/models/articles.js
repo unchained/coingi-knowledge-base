@@ -23,40 +23,72 @@ const demoContent = `<div class="video-container">
                     </p>`;
 
 module.exports = {
-  'what-is-money': {
-    title: 'What is <b>money</b>',
+  'changing-your-email-address': {
+    title: 'Changing your <b>email</b> address',
     content: demoContent,
   },
-  'why-am-i-not-rich-yet': {
-    title: 'Why am I not <b>rich</b> yet?',
+  'changing-your-password': {
+    title: 'Changing your <b>password</b>',
     content: demoContent,
   },
-  'my-dog-ate-my-hardware-wallet': {
-    title: 'My dog ate my <b>hardware wallet</b>',
+  'forgotten-password': {
+    title: 'Reset <b>forgotten password</b>',
     content: demoContent,
   },
-  'billion-dollar-pizza': {
-    title: 'Billion <b>dollar</b> pizza',
+  'switch-language-and-region': {
+    title: 'Switch the <b>language & region</b> of your account',
     content: demoContent,
   },
-  'history-of-trading': {
-    title: '<b>History</b> of trading',
+  'verify-identity': {
+    title: 'Verify your <b>identity</b>',
     content: demoContent,
   },
-  'banking-on-bitcoin': {
-    title: 'Banking on <b>Bitcoin</b>',
+  'failed-identity-verification': {
+    title: 'Verification of my account was <b>not successful</b>',
     content: demoContent,
   },
-  'leverage-moving-average': {
-    title: 'Leverage moving <b>average</b>',
+  'add-bank-account': {
+    title: 'Add a <b>bank account</b> and start trading!',
     content: demoContent,
   },
-  'who-is-the-real-satoshi': {
-    title: 'Who\'s the real <b>Satoshi</b>?',
+  'what-is-two-fator-authentication': {
+    title: 'What is <b>two-factor</b> authentication',
     content: demoContent,
   },
-  'i-have-bought-sold-a-currency-but-dont-see-the-right-amount-on-my-accounts-balance': {
+  'setting-up-two-fator-authentication': {
+    title: 'Setting up <b>two-factor</b> authentication',
+    content: demoContent,
+  },
+  'reset-access-token': {
+    title: 'Reset your <b>access token</b>',
+    content: demoContent,
+  },
+  'where-is-my-bitcoin': {
     title: 'I have bought/sold a currency but don\'t see the right <b>amount</b> on my <b>account\'s balance</b>',
+    content: demoContent,
+  },
+  'how-to-buy-sell-bitcoin': {
+    title: 'How to <b>buy and sell bitcoin</b>',
+    content: demoContent,
+  },
+  'cancelling-purchase': {
+    title: 'Can I <b>cancel</b> my purchase?',
+    content: demoContent,
+  },
+  'trading-other-currencies': {
+    title: 'Trading <b>other currencies</b> (altcoins)',
+    content: demoContent,
+  },
+  'what-are-transfer-fees': {
+    title: 'What are <b>transfer fees</b>?',
+    content: demoContent,
+  },
+  'why-transfer-fees': {
+    title: 'Why do I have to <b>pay fees</b>?',
+    content: demoContent,
+  },
+  'overview-of-all-fees': {
+    title: '<b>Overview</b> of all fees',
     content: demoContent,
   },
 };
